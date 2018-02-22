@@ -1,0 +1,59 @@
+{
+    "communities_replies": {
+        "communities_replies": {
+            "day": 0,
+            "month": 37,
+            "week": 1
+        }
+    },
+    "messages": {
+        "count_msgs": {
+            "day": 44,
+            "month": 799,
+            "week": 144
+        },
+        "msgs_from_communities": {
+            "day": 2,
+            "month": 74,
+            "week": 3
+        },
+        "msgs_from_unique_users": {
+            "day": 27,
+            "month": 177,
+            "week": 53
+        },
+        "msgs_from_unique_users_percent": {
+            "day": 22.152690863579476,
+            "month": 22.152690863579476,
+            "week": 36.80555555555556
+        }
+    },
+    "messages_from_bots": {
+        "messages_from_bots": {
+            "day": 0,
+            "month": 0,
+            "week": 0
+        }
+    },
+    "questions": {
+        "questions": {
+            "day": 2,
+            "month": 89,
+            "week": 18
+        }
+    },
+    "thanks_words": {
+        "thanks": {
+            "day": 1,
+            "month": 3,
+            "week": 1
+        }
+    },
+    "users_replies": {
+        "users_replies": {
+            "day": 0,
+            "month": 158,
+            "week": 1
+        }
+    }
+}
