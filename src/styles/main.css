@@ -46,3 +46,7 @@ section {
 		display: block;
 	}
 }
+
+.chart {
+	margin-bottom: 5vh;
+}

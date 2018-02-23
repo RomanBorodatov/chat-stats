@@ -69,4 +69,28 @@ fetch('count_msgs_30_days.json')
 				responsive: true,
 			}
 		})
+	});
+
+fetch('monthes_data_all_msgs.json')
+	.then(function(resp) { return resp.json(); })
+	.then(function(result) {
+		months = Object.keys(result);
+		data = Object.values(result);
+		ctx = document.getElementById('secondChart');
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: months,
+				datasets: [{
+					label: '# of messages',
+					data: data,
+					backgroundColor: 'rgba(54, 162, 235, 0.2)',
+					borderColor: 'rgba(54, 162, 235, 1)',
+					borderWidth: 1,
+				}], 
+			},
+			options: {
+				responsive: true,
+			}
+		})
 	})
