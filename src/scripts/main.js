@@ -1,4 +1,4 @@
-fetch('/messages.json')
+fetch('messages.json')
 	.then((resp) => resp.json())
 	.then(function(result) {
 		let messagesInfo = result;
@@ -22,7 +22,7 @@ fetch('/messages.json')
 		}
 	})
 
-fetch('/users_amount.json')
+fetch('users_amount.json')
 	.then(function(resp) { return resp.json(); })
 	.then(function(result) {
 		usersAmount = result.amount_of_users;
