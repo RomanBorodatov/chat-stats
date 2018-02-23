@@ -47,3 +47,26 @@ fetch('users_amount.json')
 		}
 	})
 
+fetch('count_msgs_30_days.json')
+	.then(function(resp) { return resp.json(); })
+	.then(function(result) {
+		days = Object.keys(result);
+		data = Object.values(result);
+		ctx = document.getElementById('firstChart');
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: days,
+				datasets: [{
+					label: '# of messages',
+					data: data,
+					backgroundColor: 'rgba(255, 99, 132, 0.2)',
+					borderColor: 'rgba(255,99,132,1)',
+					borderWidth: 1,
+				}], 
+			},
+			options: {
+				responsive: true,
+			}
+		})
+	})
