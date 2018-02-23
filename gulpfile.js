@@ -30,5 +30,5 @@ gulp.task('styles', function() {
 gulp.task('watch', ['browser-sync', 'styles'], function() {
     gulp.watch('src/styles/main.css', ['styles']);
     gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('src/scripts/**/*.js', browserSync.reload);
+    gulp.watch('src/scripts/*.js', browserSync.reload);
 });

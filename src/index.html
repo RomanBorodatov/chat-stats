@@ -24,22 +24,22 @@
 
 		<section>
 			<h2 class="section-title">Users Amount</h2>
-			<div class="row">
+			<div class="row users-amount">
 				<div class="three columns">
 					<h3>Today</h3>
-					<h4>925</h4>
+					<h4 class="text-bold" id="users_amount_today"></h4>
 				</div>
 				<div class="three columns">
 					<h3>Yesterday</h3>
-					<h4>924</h4>
+					<h4 class="text-bold" id="users_amount_last_day"></h4>
 				</div>
 				<div class="three columns">
 					<h3>Last Week</h3>
-					<h4>907</h4>
+					<h4 class="text-bold" id="users_amount_last_week"></h4>
 				</div>
 				<div class="three columns">
 					<h3>Last Month</h3>
-					<h4>?</h4>
+					<h4 class="text-bold" id="users_amount_last_month"></h4>
 				</div>
 			</div>
 			<div class="row">
@@ -54,25 +54,25 @@
 						<tbody>
 							<tr>
 								<td>Month</td>
-								<td>?</td>
-								<td>?</td>
+								<td id="growth_of_users_month"></td>
+								<td id="growth_of_users_percents_month"></td>
 							</tr>
 							<tr>
 								<td>Week</td>
-								<td>1</td>
-								<td class="text-green">0.110%</td>
+								<td id="growth_of_users_week"></td>
+								<td id="growth_of_users_percents_week"></td>
 							</tr>
 							<tr>
 								<td>Day</td>
-								<td>1</td>
-								<td class="text-green">0.108%</td>
+								<td id="growth_of_users_day"></td>
+								<td id="growth_of_users_percents_day"></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</section>
-		<div class="section">
+		<section>
 			<h2 class="section-title">Messages</h2>
 			<div class="row">
 				<div class="eight columns">
@@ -87,21 +87,21 @@
 						<tbody>
 							<tr>
 								<td>Month</td>
-								<td>50</td>
-								<td>50</td>
-								<td>50</td>
+								<td id="count_msgs_month"></td>
+								<td id="msgs_from_communities_month"></td>
+								<td id="messages_from_bots_month"></td>
 							</tr>
 							<tr>
 								<td>Week</td>
-								<td>6</td>
-								<td>6</td>
-								<td>6</td>
+								<td id="count_msgs_week"></td>
+								<td id="msgs_from_communities_week"></td>
+								<td id="messages_from_bots_week"></td>
 							</tr>
 							<tr>
 								<td>Day</td>
-								<td>3</td>
-								<td>3</td>
-								<td>3</td>
+								<td id="count_msgs_day"></td>
+								<td id="msgs_from_communities_day"></td>
+								<td id="messages_from_bots_day"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -117,18 +117,18 @@
 						<tbody>
 							<tr>
 								<td>Month</td>
-								<td>1</td>
-								<td>10</td>
+								<td id="msgs_from_unique_users_month"></td>
+								<td id="msgs_from_unique_users_percent_month"></td>
 							</tr>
 							<tr>
 								<td>Week</td>
-								<td>1</td>
-								<td>10</td>
+								<td id="msgs_from_unique_users_week"></td>
+								<td id="msgs_from_unique_users_percent_week"></td>
 							</tr>
 							<tr>
 								<td>Day</td>
-								<td>1</td>
-								<td>10</td>
+								<td id="msgs_from_unique_users_day"></td>
+								<td id="msgs_from_unique_users_percent_day"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -146,18 +146,18 @@
 						<tbody>
 							<tr>
 								<td>Month</td>
-								<td>?</td>
-								<td>?</td>
+								<td id="communities_replies_month"></td>
+								<td id="users_replies_month"></td>
 							</tr>
 							<tr>
 								<td>Week</td>
-								<td>1</td>
-								<td>1</td>
+								<td id="communities_replies_week"></td>
+								<td id="users_replies_week"></td>
 							</tr>
 							<tr>
 								<td>Day</td>
-								<td>1</td>
-								<td>1</td>
+								<td id="communities_replies_day"></td>
+								<td id="users_replies_day"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -173,24 +173,24 @@
 						<tbody>
 							<tr>
 								<td>Month</td>
-								<td>?</td>
-								<td>?</td>
+								<td id="questions_month"></td>
+								<td id="thanks_month"></td>
 							</tr>
 							<tr>
 								<td>Week</td>
-								<td>1</td>
-								<td>1</td>
+								<td id="questions_week"></td>
+								<td id="thanks_week"></td>
 							</tr>
 							<tr>
 								<td>Day</td>
-								<td>1</td>
-								<td>1</td>
+								<td id="questions_day"></td>
+								<td id="thanks_day"></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 	<script src="./scripts/main.js"></script>
 </body>

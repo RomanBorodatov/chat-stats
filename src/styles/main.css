@@ -21,9 +21,28 @@ body {
 	color: #d9534f;
 }
 
+.text-bold {
+	font-weight: 800;
+}
+
+.hr-small-only {
+	display: none;
+}
+
+section {
+	margin: 10vh auto;
+}
+
+.users-amount {
+	margin: 5vh auto;
+}
+
 @media (max-width: 550px) {
 	.centered {
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.hr-small-only {
+		display: block;
 	}
 }
