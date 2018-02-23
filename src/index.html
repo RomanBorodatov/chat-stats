@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alalytics</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/skeleton.css">
+	<link rel="stylesheet" href="./styles/main.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<section class="header">
+			<h2>Chat analytics</h2>
+			<h4>For <a href="#">Anryze Distributed Network</a></h4>
+		</section>
+
+		<section>
+			<h2 class="section-title">Users Amount</h2>
+			<div class="row users-amount">
+				<div class="three columns">
+					<h3>Today</h3>
+					<h4 class="text-bold" id="users_amount_today"></h4>
+				</div>
+				<div class="three columns">
+					<h3>Yesterday</h3>
+					<h4 class="text-bold" id="users_amount_last_day"></h4>
+				</div>
+				<div class="three columns">
+					<h3>Last Week</h3>
+					<h4 class="text-bold" id="users_amount_last_week"></h4>
+				</div>
+				<div class="three columns">
+					<h3>Last Month</h3>
+					<h4 class="text-bold" id="users_amount_last_month"></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns offset-by-three">
+					<h5 class="table-title">Users Growth</h2>
+					<table class="u-full-width">
+						<thead>
+							<th></th>
+							<th>Users</th>
+							<th>Percentage</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Month</td>
+								<td id="growth_of_users_month"></td>
+								<td id="growth_of_users_percents_month"></td>
+							</tr>
+							<tr>
+								<td>Week</td>
+								<td id="growth_of_users_week"></td>
+								<td id="growth_of_users_percents_week"></td>
+							</tr>
+							<tr>
+								<td>Day</td>
+								<td id="growth_of_users_day"></td>
+								<td id="growth_of_users_percents_day"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2 class="section-title">Messages</h2>
+			<div class="row">
+				<div class="eight columns">
+					<h5 class="table-title">General</h5>
+					<table class="u-full-width">
+						<thead>
+							<th></th>
+							<th>Total</th>
+							<th>Admins</th>
+							<th>Bots</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Month</td>
+								<td id="count_msgs_month"></td>
+								<td id="msgs_from_communities_month"></td>
+								<td id="messages_from_bots_month"></td>
+							</tr>
+							<tr>
+								<td>Week</td>
+								<td id="count_msgs_week"></td>
+								<td id="msgs_from_communities_week"></td>
+								<td id="messages_from_bots_week"></td>
+							</tr>
+							<tr>
+								<td>Day</td>
+								<td id="count_msgs_day"></td>
+								<td id="msgs_from_communities_day"></td>
+								<td id="messages_from_bots_day"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="four columns">
+					<h5 class="table-title">From unique users</h5>
+					<table class="u-max-full-width centered">
+						<thead>
+							<th></th>
+							<th>Messages</th>
+							<th>Percentage</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Month</td>
+								<td id="msgs_from_unique_users_month"></td>
+								<td id="msgs_from_unique_users_percent_month"></td>
+							</tr>
+							<tr>
+								<td>Week</td>
+								<td id="msgs_from_unique_users_week"></td>
+								<td id="msgs_from_unique_users_percent_week"></td>
+							</tr>
+							<tr>
+								<td>Day</td>
+								<td id="msgs_from_unique_users_day"></td>
+								<td id="msgs_from_unique_users_percent_day"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<h5 class="table-title">Replies</h2>
+					<table class="u-full-width">
+						<thead>
+							<th></th>
+							<th>From admins</th>
+							<th>From users</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Month</td>
+								<td id="communities_replies_month"></td>
+								<td id="users_replies_month"></td>
+							</tr>
+							<tr>
+								<td>Week</td>
+								<td id="communities_replies_week"></td>
+								<td id="users_replies_week"></td>
+							</tr>
+							<tr>
+								<td>Day</td>
+								<td id="communities_replies_day"></td>
+								<td id="users_replies_day"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="six columns">
+					<h5 class="table-title">Reactions</h2>
+					<table class="u-full-width">
+						<thead>
+							<th></th>
+							<th>Questions</th>
+							<th>Thank Words</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Month</td>
+								<td id="questions_month"></td>
+								<td id="thanks_month"></td>
+							</tr>
+							<tr>
+								<td>Week</td>
+								<td id="questions_week"></td>
+								<td id="thanks_week"></td>
+							</tr>
+							<tr>
+								<td>Day</td>
+								<td id="questions_day"></td>
+								<td id="thanks_day"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="./scripts/main.js"></script>
+</body>
+</html>

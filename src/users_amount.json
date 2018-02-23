@@ -1,0 +1,18 @@
+{
+    "amount_of_users": {
+        "last_day": 924,
+        "last_month": "no data yet",
+        "last_week": 907,
+        "today": 925
+    },
+    "growth_of_users": {
+        "day": 1,
+        "month": "no data yet",
+        "week": 1
+    },
+    "growth_of_users_percents": {
+        "day": 0.10822510822510822,
+        "month": "no data yet",
+        "week": 0.11025358324145534
+    }
+}
