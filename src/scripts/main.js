@@ -50,8 +50,8 @@ fetch('users_amount.json')
 fetch('count_msgs_30_days.json')
 	.then(function(resp) { return resp.json(); })
 	.then(function(result) {
-		days = Object.keys(result);
-		data = Object.values(result);
+		days = Object.keys(result).reverse();
+		data = Object.values(result).reverse();
 		ctx = document.getElementById('firstChart');
 		new Chart(ctx, {
 			type: 'line',
@@ -74,9 +74,33 @@ fetch('count_msgs_30_days.json')
 fetch('monthes_data_all_msgs.json')
 	.then(function(resp) { return resp.json(); })
 	.then(function(result) {
-		months = Object.keys(result);
-		data = Object.values(result);
+		months = Object.keys(result).reverse();
+		data = Object.values(result).reverse();
 		ctx = document.getElementById('secondChart');
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: months,
+				datasets: [{
+					label: '# of messages',
+					data: data,
+					backgroundColor: 'rgba(54, 162, 235, 0.2)',
+					borderColor: 'rgba(54, 162, 235, 1)',
+					borderWidth: 1,
+				}], 
+			},
+			options: {
+				responsive: true,
+			}
+		})
+	})
+
+fetch('average_msgs.json')
+	.then(function(resp) { return resp.json(); })
+	.then(function(result) {
+		months = Object.keys(result).reverse();
+		data = Object.values(result).reverse();
+		ctx = document.getElementById('thirdChart');
 		new Chart(ctx, {
 			type: 'line',
 			data: {
